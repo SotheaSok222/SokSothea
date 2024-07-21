@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 10vh;
+  background-color: rgb(31, 30, 30, 0.24);
+  position: fixed;
+  width: 100%;
+  flex-wrap: wrap;
+  z-index: 10;
+  padding: 0 5%;
+}
+span {
+  color: #ff004f;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+nav ul li a {
+ font-weight: 700;
+}
+nav ul li {
+     display: inline-block;
+    margin-left: 20px;
+}
+nav ul li a {
+     font-size: 23px;
+     position: relative;
+}
+ nav ul li a:hover {
+  color: #ff004f;
+}
+ nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.deafault_padding{
+    padding: 0 5%;
+}
+#hero{
+     background-image: url(images/hero-bg-lg.jpeg);
+       background-position: center;
+         background-size: cover;
+           width: 100%;
+             height: 100vh;
+               position: relative;
+                 display: flex;
+                   flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+#hero > div {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+#hero::after {
+     content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#hero button {
+  padding: 14px 25px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  border: 2px solid #ff004f;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#hero button:hover {
+  background-color: #ff004f;
+}
+#About img{
+    margin: 30px auto;
+    width: 50vh;
+    height:60vh ;
+    border-width: 30%;
+   border-radius: 10%;
+}
+
+#About{
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 100%;
+    background-size: cover;
+  justify-content: center;
+   position: relative;
+   color: white;
+}
+#About .navList{
+  font-size: 25px;
+  font-weight: 700px;
+  display: flex; 
+}
+#About .tab-item{
+  margin-right: 25px;
+}
+.warpInform{
+  margin-top: 20px;
+}
+ h1{
+  text-align: center;
+  font-size: 100px;
+  font-weight: bolder;
+}
+#About  .aboutTopic p{
+  padding-bottom: 20px;
+}
+
+#Service{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  font-size: larger;
+  font-weight: bold
+
+}
+.card{
+  background-color:grey;
+  width: 33%;
+  height: 60vh;
+  padding: 20px 40px;
+  border-radius: 10%;
+  margin: 0 25px;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s;
+}
+.card i{
+  background-color: transparent;
+  font-size: 50px;
+  margin-top: 50px;
+}
+.card .titlecard{
+  text-align: left;
+  font-size: 40px;
+  font-weight: 700px;
+  margin: 25px auto;
+}
+.card p{
+  margin-bottom: 20px;
+}
+.card button{
+  position: absolute;
+  background-color:transparent;
+  border-style: none;
+  color: white;
+}
+.warpcard{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.card:hover{
+  background-color: #ff004f;
+  transform: translateY(-25px);
+  vertical-align: middle;
+
+}
+
+#mywork{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#mywork h3{
+  font-size: 30px;
+}
+.warpAllImg{
+  display: flex;
+}
+.warpImg{
+  width: 100%;
+  height: 100%;
+  margin: 30px 50px;
+  border-radius: 10%;
+}
+.image{
+  width: 400px;
+  position: relative;
+}
+.image img{
+   width: 400px;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.tpwork{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.tpwork i{
+  margin-top: 25px;
+}
+.tpwork h3{
+  margin: 30px auto;
+}
+.tpwork p{
+  margin: 0 30px;
+}
+.tpwork:hover{
+  opacity: 1;
+}
+.tpwork:hover img{
+transform: scale(1.1);
+}
+#mywork button{
+    padding: 14px 25px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  border: 2px solid #ff004f;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline;
+  width: 30%;
+  align-items: center;
+}
+#mywork button:hover{
+  background-color: #ff004f;
+}
+#Contact{
+  background-color: black;
+  color: white;
+  display: flex;
+}
+.sideRight{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+}
+.sideRight p{
+  margin: 15px 25px;
+  font-size: 30px;
+  font-weight: 700px;
+}
+.sideRight ul li a{
+  width: 20px;
+  height: 50px;
+}
+.sideRight button{
+    padding: 14px 25px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  border: 2px solid #ff004f;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px 150px;
+}
+.sideRight button:hover{
+  background-color: #ff004f;
+}
+.sideleft{
+  width: 100%;
+  height: 100%;
+  justify-content:first baseline ;
+}
+.sideleft form{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white;
+}
+.sideleft form textarea{
+  background-color: gray;
+  border-radius: 15px;
+  font-size: 30px;
+  font-weight: 600px;
+  padding: 0 20px;
+  box-shadow: 3px 3px 3px #ff004f inset;
+}
+.sideleft form input{
+border-radius: 10px;
+border: 5px solid #ff004f;
+box-shadow: 3px 3px 3px #ff004f inset;
+margin: 20px 10px;
+width: auto;
+height: 80px;
+background-color: grey;
+border-style: none;
+color: white;
+font-size: 30px;
+font-weight: 600px;
+padding: 0 20px;
+}
+.sideleft  button{
+  padding: 14px 25px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  border: 2px solid #ff004f;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px auto;
+  
+}
+.sideleft  button:hover{
+background-color: #ff004f;
+}
